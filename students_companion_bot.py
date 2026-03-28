@@ -1,5 +1,6 @@
 import logging
 import requests
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     Application,
@@ -11,8 +12,8 @@ from telegram.ext import (
     ConversationHandler,
 )
 
-import os
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8226467511:AAGctfgr0KJkeF_-VjbJG5g2Wrg0-WC9Jik")
+
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 OWNER_TELEGRAM_ID = 6335543803
 WALLET_IMAGE_PATH = "kcash_wallet.jpeg"
 
